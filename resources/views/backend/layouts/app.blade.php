@@ -20,7 +20,7 @@
         @include('backend.components.sidebar')
         <div id="layoutSidenav_content">
             @yield('body')
-           
+            @yield('scripts')
             @include('backend.components.footer')
         </div>
     </div>
@@ -33,6 +33,9 @@
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
         crossorigin="anonymous"></script>
     <script src="{{ asset('bakend') }}/js/datatables-simple-demo.js"></script>
+
+    
+   
 </body>
 
 </html>

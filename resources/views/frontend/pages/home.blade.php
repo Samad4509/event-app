@@ -105,36 +105,28 @@ Home Page
                 <div class="col-lg-12">
                     <div class="event-category-buttons ">
                         <ul class="nav nav-pills mb-3" id="events-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-tab1" data-bs-toggle="pill"
-                                    data-bs-target="#pills-event1" type="button" role="tab"
-                                    aria-controls="pills-event1" aria-selected="true">Business</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-tab2" data-bs-toggle="pill"
-                                    data-bs-target="#pills-event2" type="button" role="tab"
-                                    aria-controls="pills-event2" aria-selected="false">Fire Wall</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-tab3" data-bs-toggle="pill"
-                                    data-bs-target="#pills-event3" type="button" role="tab"
-                                    aria-controls="pills-event3" aria-selected="false">Sport</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-tab4" data-bs-toggle="pill"
-                                    data-bs-target="#pills-event4" type="button" role="tab"
-                                    aria-controls="pills-event4" aria-selected="false">Web Development</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-tab5" data-bs-toggle="pill"
-                                    data-bs-target="#pills-event5" type="button" role="tab"
-                                    aria-controls="pills-event5" aria-selected="false">Marketing </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-tab6" data-bs-toggle="pill"
-                                    data-bs-target="#pills-event6" type="button" role="tab"
-                                    aria-controls="pills-event6" aria-selected="false">Technology</button>
-                            </li>
+
+                            @foreach($eventTypes as $key => $type)
+
+                                <li class="nav-item" role="presentation">
+
+                                    <button class="nav-link @if($key == 0) active @endif"
+                                        id="tab-{{ $type->id }}"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#event-{{ $type->id }}"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="event-{{ $type->id }}"
+                                        aria-selected="{{ $key == 0 ? 'true' : 'false' }}">
+
+                                        {{ $type->name }}
+
+                                    </button>
+
+                                </li>
+
+                            @endforeach
+
                         </ul>
                     </div>
                 </div>

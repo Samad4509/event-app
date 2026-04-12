@@ -3,13 +3,15 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\EventType;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home()
-    {
-        return view('frontend.pages.home');
+    {  
+        $eventTypes = EventType::orderBy('position', 'asc')->get();
+        return view('frontend.pages.home', compact('eventTypes'));
     }
     public function about()
     {

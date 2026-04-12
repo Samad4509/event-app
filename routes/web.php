@@ -1,13 +1,13 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\EventTypeController;
+use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\frontend\PageController;
-
-use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\TeskController;
-use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 /*
@@ -44,6 +44,23 @@ Route::prefix('admin')->name('admin.')->middleware(['auth','role:admin'])->group
         Route::resource('users', UserController::class);
         Route::resource('roles', RoleController::class);
         Route::resource('blogs', BlogsController::class);
+
+
+        // Event Type
+
+        Route::get('/eventtype', [EventTypeController::class, 'index'])->name('eventtype.index');
+
+        Route::get('/eventtype/create', [EventTypeController::class, 'create'])->name('eventtype.create');
+
+        Route::post('/eventtype/store', [EventTypeController::class, 'store'])->name('eventtype.store');
+
+        Route::get('/eventtype/edit/{id}', [EventTypeController::class, 'edit'])->name('eventtype.edit');
+
+        Route::put('/eventtype/update/{id}', [EventTypeController::class, 'update'])->name('eventtype.update');
+
+        Route::delete('/eventtype/delete/{id}', [EventTypeController::class, 'destroy'])->name('eventtype.destroy');
+
+        Route::post('/eventtype/sort', [EventTypeController::class, 'sort'])->name('eventtype.sort');
         
 
 });

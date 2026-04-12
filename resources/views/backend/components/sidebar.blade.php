@@ -79,13 +79,13 @@
                     <nav class="sb-sidenav-menu-nested nav">
 
                         <!-- ADD USER -->
-                        <a class="nav-link" href="{{ route('admin.slider.create') }}">
+                        <a class="nav-link" href="">
                             <i class="fa-solid fa-plus me-2"></i> <!-- ✅ Updated -->
                             Add Slider
                         </a>
 
                         <!-- ALL USERS -->
-                        <a class="nav-link" href="{{ route('admin.slider.index') }}">
+                        <a class="nav-link" href="">
                             <i class="fa-solid fa-list me-2"></i> <!-- ✅ Updated -->
                             All Slider
                         </a>

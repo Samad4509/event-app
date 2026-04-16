@@ -4,7 +4,6 @@ Home Page
 @endsection
 @section('body')
     
-
     <!-- ===============  Hero style two start =============== -->
     <div class="hero-style-two position-relative">
         <div class="swiper hero-two-slider">
@@ -103,7 +102,8 @@ Home Page
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="event-category-buttons ">
+
+                    <div class="event-category-buttons">
                         <ul class="nav nav-pills mb-3" id="events-tab" role="tablist">
 
                             @foreach($eventTypes as $key => $type)
@@ -129,529 +129,93 @@ Home Page
 
                         </ul>
                     </div>
-                </div>
-
-                <div class="col-lg-12">
+                   
                     <div class="all-event-cards">
+
                         <div class="tab-content" id="events-tabContent">
-                            <div class="tab-pane fade show active" id="pills-event1" role="tabpanel"
-                                aria-labelledby="pills-tab1">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md13.png" alt="">
 
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Media companies need to
-                                                            better one then educate advertisers.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md15.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">interdum lectus nec viverra
-                                                            Pellentesque at neque a ligula.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md16.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Media companies need to
-                                                            better one then educate advertisers.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md17.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">interdum lectus nec viverra
-                                                            Pellentesque at neque a ligula.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-event2" role="tabpanel" aria-labelledby="pills-tab2">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            @foreach($eventTypes as $key => $type)
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md16.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Media companies need to
-                                                            better one then educate advertisers.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md17.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-event3" role="tabpanel" aria-labelledby="pills-tab3">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md13.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Media companies need to
-                                                            better one then educate advertisers.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md15.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">interdum lectus nec viverra
-                                                            Pellentesque at neque a ligula.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="tab-pane fade @if($key == 0) show active @endif"
+                                    id="event-{{ $type->id }}"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-{{ $type->id }}">
 
+                                    <div class="row">
 
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-event4" role="tabpanel" aria-labelledby="pills-tab4">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md16.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Media companies need to
-                                                            better one then educate advertisers.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        @forelse($events[$type->id] ?? [] as $event)
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">interdum lectus nec viverra
-                                                            Pellentesque at neque a ligula.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
+                                            <div class="col-lg-4 col-md-6">
+
+                                                <div class="event-card-style-two">
+
+                                                    <!-- IMAGE -->
+                                                    <div class="event-thumb">
+                                                        <img src="{{ asset($event->image) }}" alt="{{ $event->title }}">
+
+                                                        <div class="event-date">
+                                                            <a href="#">
+                                                                <i class="bi bi-calendar2-week"></i>
+                                                                {{ \Carbon\Carbon::parse($event->event_date)->format('F d, Y') }}
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-event5" role="tabpanel" aria-labelledby="pills-tab5">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md13.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Media companies need to
-                                                            better one then educate advertisers.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
+
+                                                    <!-- CONTENT -->
+                                                    <div class="event-content">
+
+                                                        <div class="event-seat-lavbel">
+                                                            <h6>
+                                                                <i class="bi bi-diagram-3"></i>
+                                                                {{ $event->seats ?? 0 }} seat
+                                                            </h6>
+                                                        </div>
+
+                                                        <div class="event-card-main">
+
+                                                            <div class="event-location">
+                                                                <a href="#">
+                                                                    <i class="bi bi-geo-alt"></i>
+                                                                    {{ $event->location }}
+                                                                </a>
+                                                            </div>
+
+                                                            <h5 class="event-title">
+                                                                <a href="#">
+                                                                    {{ $event->title }}
+                                                                </a>
+                                                            </h5>
+
+                                                            <div class="event-readme mt-2">
+                                                                <a href="#">Book Now</a>
+                                                            </div>
+
+                                                        </div>
+
                                                     </div>
+
                                                 </div>
+
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
+
+                                        @empty
+
+                                            <div class="col-12 text-center text-muted py-5">
+                                                No Events Found
                                             </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                                        @endforelse
+
                                     </div>
 
                                 </div>
 
-                            </div>
-                            <div class="tab-pane fade" id="pills-event6" role="tabpanel" aria-labelledby="pills-tab6">
+                            @endforeach
 
-                                <div class="row">
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md17.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 150 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">Integer posuere dolor vitae
-                                                            ipsum habitant morbi tristique.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="event-card-style-two">
-                                            <div class="event-thumb">
-                                                <img src="assets/images/event/ev-md14.png" alt="">
-                                                <div class="event-date">
-                                                    <a href="#"> <i class="bi bi-calendar2-week"></i> January 21,
-                                                        2021 </a>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-seat-lavbel">
-                                                    <h6><i class="bi bi-diagram-3"></i> 100 seat</h6>
-                                                </div>
-                                                <div class="event-card-main">
-                                                    <div class="event-location"><a href="#"> <i
-                                                                class="bi bi-geo-alt"></i> Broadw, New York</a></div>
-                                                    <h5 class="event-title"><a href="#">interdum lectus nec viverra
-                                                            Pellentesque at neque a ligula.</a></h5>
-                                                    <div class="event-readme">
-                                                        <a href="event-details.html">Book Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>

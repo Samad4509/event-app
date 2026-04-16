@@ -126,6 +126,39 @@
                     </nav>
                 </div>
 
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#events"
+                    aria-expanded="false" aria-controls="events">
+
+                    <div class="sb-nav-link-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+
+                    Events
+
+                    <div class="sb-sidenav-collapse-arrow">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </a>
+
+                <div class="collapse" id="events" data-bs-parent="#sidenavAccordion">
+
+                    <nav class="sb-sidenav-menu-nested nav">
+
+                        <!-- ADD EVENT -->
+                        <a class="nav-link" href="{{ route('admin.events.create') }}">
+                            <i class="fa-solid fa-plus me-2"></i>
+                            Add Event
+                        </a>
+
+                        <!-- ALL EVENTS -->
+                        <a class="nav-link" href="{{ route('admin.events.index') }}">
+                            <i class="fa-solid fa-list me-2"></i>
+                            All Events
+                        </a>
+
+                    </nav>
+                </div>
+
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#user"
                     aria-expanded="false" aria-controls="user">
 

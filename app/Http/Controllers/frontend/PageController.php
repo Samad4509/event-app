@@ -25,9 +25,11 @@ class PageController extends Controller
     {
         return view('frontend.pages.event');
     }
-    public function eventdetail()
+    public function eventdetail($slug)
     {
-        return view('frontend.pages.eventdetail');
+        $event = Event::where('slug', $slug)->firstOrFail();
+
+        return view('frontend.pages.eventdetail', compact('event'));
     }
     public function contact()
     {

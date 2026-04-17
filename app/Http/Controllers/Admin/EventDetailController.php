@@ -10,7 +10,8 @@ class EventDetailController extends Controller
 {
     public function create($id)
     {
-       return $event = Event::findOrFail($id);
-        return view('backend.events.details.create', compact('event'));
+       $event = Event::findOrFail($id);
+
+        return view('backend.events.detail.index', compact('event'));
     }
 }

@@ -181,13 +181,13 @@ Home Page
                                                             </div>
 
                                                             <h5 class="event-title">
-                                                                <a href="#">
+                                                                <a href="{{route('event.detail', $event->slug)}}">
                                                                     {{ $event->title }}
                                                                 </a>
                                                             </h5>
 
                                                             <div class="event-readme mt-2">
-                                                                <a href="#">Book Now</a>
+                                                                <a href="{{route('event.detail', $event->slug)}}">Book Now</a>
                                                             </div>
 
                                                         </div>

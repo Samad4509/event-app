@@ -15,7 +15,7 @@ Event Details Page
                     <div class="ed-main-wrap">
                         <div class="ed-top">
                             <div class="ed-thumb">
-                                <img src="assets/images/event/ed-thumb.png" alt="">
+                                <img src="{{asset('assets')}}/images/event/ed-thumb.png" alt="">
                             </div>
                             <ul class="ed-status">
                                 <li><i class="bi bi-calendar2-week"></i> January 21, 2021</li>
@@ -101,10 +101,10 @@ Event Details Page
                                             <div class="col-lg-6">
                                                 <div class="overview-images d-grid">
                                                     <div class="overview-img1">
-                                                        <img src="assets/images/gallary/view1.png" alt="" class="img-fluid">
+                                                        <img src="{{asset('assets')}}/images/gallary/view1.png" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="overview-img2">
-                                                        <img src="assets/images/gallary/view2.png" alt="" class="img-fluid">
+                                                        <img src="{{asset('assets')}}/images/gallary/view2.png" alt="" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -116,7 +116,7 @@ Event Details Page
                                                 <div class="col-md-6">
                                                     <div class="single-speaker">
                                                         <div class="speaker-image">
-                                                            <img src="assets/images/speaker/event-sm1.png" alt="">
+                                                            <img src="{{asset('assets')}}/images/speaker/event-sm1.png" alt="">
                                                         </div>
                                                         <div class="speaker-info">
                                                             <h6>John Loganin</h6>
@@ -133,7 +133,7 @@ Event Details Page
                                                 <div class="col-md-6">
                                                     <div class="single-speaker">
                                                         <div class="speaker-image">
-                                                            <img src="assets/images/speaker/event-sm2.png" alt="">
+                                                            <img src="{{asset('assets')}}/images/speaker/event-sm2.png" alt="">
                                                         </div>
                                                         <div class="speaker-info">
                                                             <h6>Jackson Levi</h6>
@@ -150,7 +150,7 @@ Event Details Page
                                                 <div class="col-md-6">
                                                     <div class="single-speaker">
                                                         <div class="speaker-image">
-                                                            <img src="assets/images/speaker/event-sm3.png" alt="">
+                                                            <img src="{{asset('assets')}}/images/speaker/event-sm3.png" alt="">
                                                         </div>
                                                         <div class="speaker-info">
                                                             <h6>Victoria Lily</h6>
@@ -167,7 +167,7 @@ Event Details Page
                                                 <div class="col-md-6">
                                                     <div class="single-speaker">
                                                         <div class="speaker-image">
-                                                            <img src="assets/images/speaker/event-sm4.png" alt="">
+                                                            <img src="{{asset('assets')}}/images/speaker/event-sm4.png" alt="">
                                                         </div>
                                                         <div class="speaker-info">
                                                             <h6>Hannah Emilia</h6>
@@ -184,7 +184,7 @@ Event Details Page
                                                 <div class="col-md-6">
                                                     <div class="single-speaker">
                                                         <div class="speaker-image">
-                                                            <img src="assets/images/speaker/event-sm5.png" alt="">
+                                                            <img src="{{asset('assets')}}/images/speaker/event-sm5.png" alt="">
                                                         </div>
                                                         <div class="speaker-info">
                                                             <h6>Sebastian Mateo</h6>
@@ -201,7 +201,7 @@ Event Details Page
                                                 <div class="col-md-6">
                                                     <div class="single-speaker">
                                                         <div class="speaker-image">
-                                                            <img src="assets/images/speaker/event-sm6.png" alt="">
+                                                            <img src="{{asset('assets')}}/images/speaker/event-sm6.png" alt="">
                                                         </div>
                                                         <div class="speaker-info">
                                                             <h6>Willow Lucy</h6>
@@ -223,16 +223,16 @@ Event Details Page
 
                                             <ul class="nav nav-pills justify-content-between" id="pills-tab1" role="tablist">
                                                 <li class="nav-item" role="presentation">
-                                                  <button class="nav-link active" id="pills-sponsor-tab1" data-bs-toggle="pill" data-bs-target="#pills-sponsor1" type="button" role="tab" aria-controls="pills-sponsor1" aria-selected="true"><img src="assets/images/sponsor/ed-sponsor1.png" alt=""></button>
+                                                  <button class="nav-link active" id="pills-sponsor-tab1" data-bs-toggle="pill" data-bs-target="#pills-sponsor1" type="button" role="tab" aria-controls="pills-sponsor1" aria-selected="true"><img src="{{asset('assets')}}/images/sponsor/ed-sponsor1.png" alt=""></button>
                                                 </li>
                                                 <li class="nav-item" role="presentation">
-                                                  <button class="nav-link" id="pills-sponsor-tab2" data-bs-toggle="pill" data-bs-target="#pills-sponsor2" type="button" role="tab" aria-controls="pills-sponsor2" aria-selected="false"><img src="assets/images/sponsor/ed-sponsor2.png" alt=""></button>
+                                                  <button class="nav-link" id="pills-sponsor-tab2" data-bs-toggle="pill" data-bs-target="#pills-sponsor2" type="button" role="tab" aria-controls="pills-sponsor2" aria-selected="false"><img src="{{asset('assets')}}/images/sponsor/ed-sponsor2.png" alt=""></button>
                                                 </li>
                                                 <li class="nav-item" role="presentation">
-                                                  <button class="nav-link" id="pills-sponsor-tab3" data-bs-toggle="pill" data-bs-target="#pills-sponsor3" type="button" role="tab" aria-controls="pills-sponsor3" aria-selected="false"><img src="assets/images/sponsor/ed-sponsor4.png" alt=""></button>
+                                                  <button class="nav-link" id="pills-sponsor-tab3" data-bs-toggle="pill" data-bs-target="#pills-sponsor3" type="button" role="tab" aria-controls="pills-sponsor3" aria-selected="false"><img src="{{asset('assets')}}/images/sponsor/ed-sponsor4.png" alt=""></button>
                                                 </li>
                                                 <li class="nav-item" role="presentation">
-                                                  <button class="nav-link" id="pills-sponsor-tab4" data-bs-toggle="pill" data-bs-target="#pills-sponsor4" type="button" role="tab" aria-controls="pills-sponsor4" aria-selected="false"><img src="assets/images/sponsor/ed-sponsor3.png" alt=""></button>
+                                                  <button class="nav-link" id="pills-sponsor-tab4" data-bs-toggle="pill" data-bs-target="#pills-sponsor4" type="button" role="tab" aria-controls="pills-sponsor4" aria-selected="false"><img src="{{asset('assets')}}/images/sponsor/ed-sponsor3.png" alt=""></button>
                                                 </li>
                                               </ul>
                                               <div class="tab-content" id="pills-tabContent1">
@@ -265,7 +265,7 @@ Event Details Page
                                             <ul class="comments-list">
                                                 <li class="single-comment">
                                                     <div class="commentor-img">
-                                                        <img src="assets/images/speaker/commentor-3.png" alt="">
+                                                        <img src="{{asset('assets')}}/images/speaker/commentor-3.png" alt="">
                                                     </div>
                                                     <div class="comment-info">
                                                         <p>Cras semper, massa vel aliquam luctus, eros odio tempor turpis, ac bibend
@@ -279,7 +279,7 @@ Event Details Page
                                                                 </div>
                                                             </div>
                                                             <div class="reply-btn">
-                                                                <img src="assets/images/icons/reply-icon.png" alt="" class="reply-icon">
+                                                                <img src="{{asset('assets')}}/images/icons/reply-icon.png" alt="" class="reply-icon">
                                                                 <a href="#">Reply</a>
                                                             </div>
                                                         </div>
@@ -287,7 +287,7 @@ Event Details Page
                                                 </li>
                                                 <li class="single-comment">
                                                     <div class="commentor-img">
-                                                        <img src="assets/images/speaker/commentor-2.png" alt="">
+                                                        <img src="{{asset('assets')}}/images/speaker/commentor-2.png" alt="">
                                                     </div>
                                                     <div class="comment-info">
                                                         <p>Cras semper, massa vel aliquam luctus, eros odio tempor turpis, ac bibend
@@ -301,7 +301,7 @@ Event Details Page
                                                                 </div>
                                                             </div>
                                                             <div class="reply-btn">
-                                                                <img src="assets/images/icons/reply-icon.png" alt="" class="reply-icon">
+                                                                <img src="{{asset('assets')}}/images/icons/reply-icon.png" alt="" class="reply-icon">
                                                                 <a href="#">Reply</a>
                                                             </div>
                                                         </div>
@@ -309,7 +309,7 @@ Event Details Page
                                                 </li>
                                                 <li class="single-comment">
                                                     <div class="commentor-img">
-                                                        <img src="assets/images/speaker/commentor-1.png" alt="">
+                                                        <img src="{{asset('assets')}}/images/speaker/commentor-1.png" alt="">
                                                     </div>
                                                     <div class="comment-info">
                                                         <p>Cras semper, massa vel aliquam luctus, eros odio tempor turpis, ac bibend
@@ -323,7 +323,7 @@ Event Details Page
                                                                 </div>
                                                             </div>
                                                             <div class="reply-btn">
-                                                                <img src="assets/images/icons/reply-icon.png" alt="" class="reply-icon">
+                                                                <img src="{{asset('assets')}}/images/icons/reply-icon.png" alt="" class="reply-icon">
                                                                 <a href="#">Reply</a>
                                                             </div>
                                                         </div>
@@ -381,7 +381,7 @@ Event Details Page
                                                         </div>
                                                         <div class="schedule-bottom">
                                                             <div class="speaker-image">
-                                                                <img src="assets/images/speaker/speaker-sm1.png" alt="">
+                                                                <img src="{{asset('assets')}}/images/speaker/speaker-sm1.png" alt="">
                                                             </div>
                                                             <div class="speaker-info">
                                                                 <h4>John Loganin</h4>
@@ -442,7 +442,7 @@ Event Details Page
                                                         </div>
                                                         <div class="schedule-bottom">
                                                             <div class="speaker-image">
-                                                                <img src="assets/images/speaker/speaker-sm2.png" alt="">
+                                                                <img src="{{asset('assets')}}/images/speaker/speaker-sm2.png" alt="">
                                                             </div>
                                                             <div class="speaker-info">
                                                                 <h4>Joseph
@@ -519,7 +519,7 @@ Event Details Page
                                                         </div>
                                                         <div class="schedule-bottom">
                                                             <div class="speaker-image">
-                                                                <img src="assets/images/speaker/speaker-sm3.png" alt="">
+                                                                <img src="{{asset('assets')}}/images/speaker/speaker-sm3.png" alt="">
                                                             </div>
                                                             <div class="speaker-info">
                                                                 <h4>Gianna
@@ -581,7 +581,7 @@ Event Details Page
                                                         </div>
                                                         <div class="schedule-bottom">
                                                             <div class="speaker-image">
-                                                                <img src="assets/images/speaker/speaker-sm4.png" alt="">
+                                                                <img src="{{asset('assets')}}/images/speaker/speaker-sm4.png" alt="">
                                                             </div>
                                                             <div class="speaker-info">
                                                                 <h4>Michael
@@ -651,76 +651,76 @@ Event Details Page
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary1.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary1.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-sm1.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-sm1.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-sm2.png">
-                                                        <i class="bi bi-eye"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-l1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-l1.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-sm2.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-l2.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-l2.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-l1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-l1.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary1.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-l2.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-l2.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-sm1.png">
-                                                        <i class="bi bi-eye"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-sm2.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary1.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-l1.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-l1.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-sm1.png">
+                                                        <i class="bi bi-eye"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="gallary-item">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-sm1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-sm2.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="gallary-item">
-                                                    <img src="assets/images/gallary/e-gallary-l2.png" alt="Image Gallery">
-                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="assets/images/gallary/e-gallary-l2.png">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-l1.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-l1.png">
+                                                        <i class="bi bi-eye"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="gallary-item">
+                                                    <img src="{{asset('assets')}}/images/gallary/e-gallary-l2.png" alt="Image Gallery">
+                                                    <a class="gallary-item-overlay" data-fancybox="gallery" data-caption="Caption Here" href="{{asset('assets')}}/images/gallary/e-gallary-l2.png">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
                                                 </div>
@@ -772,7 +772,7 @@ Event Details Page
                                 <li class="event-card-sm">
                                     <div class="event-thumb">
                                         <a href="event-details.html">
-                                            <img src="assets/images/event/event-thumb-sm1.png" alt="">
+                                            <img src="{{asset('assets')}}/images/event/event-thumb-sm1.png" alt="">
                                         </a>
                                     </div>
                                     <div class="event-sm-info">
@@ -791,7 +791,7 @@ Event Details Page
                                 <li class="event-card-sm">
                                     <div class="event-thumb">
                                         <a href="event-details.html">
-                                            <img src="assets/images/event/event-thumb-sm2.png" alt="">
+                                            <img src="{{asset('assets')}}/images/event/event-thumb-sm2.png" alt="">
                                         </a>
                                     </div>
                                     <div class="event-sm-info">
@@ -810,7 +810,7 @@ Event Details Page
                                 <li class="event-card-sm">
                                     <div class="event-thumb">
                                         <a href="event-details.html">
-                                            <img src="assets/images/event/event-thumb-sm3.png" alt="">
+                                            <img src="{{asset('assets')}}/images/event/event-thumb-sm3.png" alt="">
                                         </a>
                                     </div>
                                     <div class="event-sm-info">
@@ -829,7 +829,7 @@ Event Details Page
                                 <li class="event-card-sm">
                                     <div class="event-thumb">
                                         <a href="event-details.html">
-                                            <img src="assets/images/event/event-thumb-sm4.png" alt="">
+                                            <img src="{{asset('assets')}}/images/event/event-thumb-sm4.png" alt="">
                                         </a>
                                     </div>
                                     <div class="event-sm-info">
@@ -853,21 +853,21 @@ Event Details Page
 
                             <div class="organizer-info">
                                 <div class="organizer-image">
-                                    <img src="assets/images/event/event-orgainizer.png" alt="">
+                                    <img src="{{asset('assets')}}/images/event/event-orgainizer.png" alt="">
                                 </div>
                                 <h4>Matthew
                                     Luke</h4>
                                 <h5>Event Lab</h5>
 
                                 <div class="organizer-signature">
-                                    <img src="assets/images/event/signature.png" alt="">
+                                    <img src="{{asset('assets')}}/images/event/signature.png" alt="">
                                 </div>
                             </div>
                         </div>
 
                         <div class="event-sidebar-banner">
                             <a href="#">
-                                <img src="assets/images/banners/sb-banner.png" alt="" class="img-fluid">
+                                <img src="{{asset('assets')}}/images/banners/sb-banner.png" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -888,7 +888,7 @@ Event Details Page
              <div class="swiper-slide">
                   <div class="event-card-md">
                       <div class="event-thumb">
-                          <img src="assets/images/event/ev-md1.png" alt="">
+                          <img src="{{asset('assets')}}/images/event/ev-md1.png" alt="">
                           <div class="event-lavel">
                               <i class="bi bi-diagram-3"></i> <span>500 Seat</span>
                           </div>
@@ -903,7 +903,7 @@ Event Details Page
 
                           <div class="event-bottom">
                               <div class="event-readme">
-                                  <a href="{{route('event.detail')}}">Book Now</a>
+                                  <a href="{{route('event.detail',$event->slug)}}">Book Now</a>
                               </div>
 
                               <div class="event-share-icons">
@@ -925,7 +925,7 @@ Event Details Page
              <div class="swiper-slide">
                   <div class="event-card-md">
                       <div class="event-thumb">
-                          <img src="assets/images/event/ev-md2.png" alt="">
+                          <img src="{{asset('assets')}}/images/event/ev-md2.png" alt="">
                           <div class="event-lavel">
                               <i class="bi bi-diagram-3"></i> <span>500 Seat</span>
                           </div>
@@ -961,7 +961,7 @@ Event Details Page
              <div class="swiper-slide">
                   <div class="event-card-md">
                       <div class="event-thumb">
-                          <img src="assets/images/event/ev-md3.png" alt="">
+                          <img src="{{asset('assets')}}/images/event/ev-md3.png" alt="">
                           <div class="event-lavel">
                               <i class="bi bi-diagram-3"></i> <span>500 Seat</span>
                           </div>

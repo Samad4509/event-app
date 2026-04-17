@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about-us', [PageController::class, 'about'])->name('about');
 Route::get('/events', [PageController::class, 'event'])->name('event');
-Route::get('/events-details', [PageController::class, 'eventdetail'])->name('event.detail');
+Route::get('/events-details/{slug}', [PageController::class, 'eventdetail'])->name('event.detail');
 Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
 Route::get('/news', [PageController::class, 'news'])->name('news');
 

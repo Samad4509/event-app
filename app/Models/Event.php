@@ -29,8 +29,15 @@ class Event extends Model
         'status',
     ];
 
-     public function eventType()
+    public function eventType()
     {
         return $this->belongsTo(EventType::class);
     }
+  
+
+   public function details()
+{
+    return $this->hasMany(EventDetails::class, 'event_id')->orderBy('sort_order');
+}
+    
 }

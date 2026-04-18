@@ -39,42 +39,47 @@ Route::get('/news', [PageController::class, 'news'])->name('news');
 Auth::routes();
 
 
-Route::prefix('admin')->name('admin.')->middleware(['auth','role:admin'])->group(function () {
+Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->group(function () {
 
-        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+  Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-        Route::resource('users', UserController::class);
-        Route::resource('roles', RoleController::class);
-        Route::resource('blogs', BlogsController::class);
+  Route::resource('users', UserController::class);
+  Route::resource('roles', RoleController::class);
+  Route::resource('blogs', BlogsController::class);
 
 
-        // Event Type
+  // Event Type
 
-        Route::get('/eventtype', [EventTypeController::class, 'index'])->name('eventtype.index');
-        Route::get('/eventtype/create', [EventTypeController::class, 'create'])->name('eventtype.create');
-        Route::post('/eventtype/store', [EventTypeController::class, 'store'])->name('eventtype.store');
-        Route::get('/eventtype/edit/{id}', [EventTypeController::class, 'edit'])->name('eventtype.edit');
-        Route::put('/eventtype/update/{id}', [EventTypeController::class, 'update'])->name('eventtype.update');
-        Route::delete('/eventtype/delete/{id}', [EventTypeController::class, 'destroy'])->name('eventtype.destroy');
-        Route::post('/eventtype/sort', [EventTypeController::class, 'sort'])->name('eventtype.sort');
-        
-        //Event
-        Route::get('/events', [EventController::class, 'index'])->name('events.index');
-        Route::get('/events/create', [EventController::class, 'create'])->name('events.create');
-        Route::post('/events/store', [EventController::class, 'store'])->name('events.store');
-        Route::get('/events/edit/{id}', [EventController::class, 'edit'])->name('events.edit');
-        Route::put('/events/update/{id}', [EventController::class, 'update'])->name('events.update');
-        Route::get('/events/delete/{id}', [EventController::class, 'destroy'])->name('events.delete');
+  Route::get('/eventtype', [EventTypeController::class, 'index'])->name('eventtype.index');
+  Route::get('/eventtype/create', [EventTypeController::class, 'create'])->name('eventtype.create');
+  Route::post('/eventtype/store', [EventTypeController::class, 'store'])->name('eventtype.store');
+  Route::get('/eventtype/edit/{id}', [EventTypeController::class, 'edit'])->name('eventtype.edit');
+  Route::put('/eventtype/update/{id}', [EventTypeController::class, 'update'])->name('eventtype.update');
+  Route::delete('/eventtype/delete/{id}', [EventTypeController::class, 'destroy'])->name('eventtype.destroy');
+  Route::post('/eventtype/sort', [EventTypeController::class, 'sort'])->name('eventtype.sort');
 
-        Route::get('/events/status/{id}', [EventController::class, 'toggleStatus'])->name('events.status');
+  //Event
+  Route::get('/events', [EventController::class, 'index'])->name('events.index');
+  Route::get('/events/create', [EventController::class, 'create'])->name('events.create');
+  Route::post('/events/store', [EventController::class, 'store'])->name('events.store');
+  Route::get('/events/edit/{id}', [EventController::class, 'edit'])->name('events.edit');
+  Route::put('/events/update/{id}', [EventController::class, 'update'])->name('events.update');
+  Route::get('/events/delete/{id}', [EventController::class, 'destroy'])->name('events.delete');
 
-        Route::post('events/sort', [EventController::class, 'sort'])->name('events.sort');
+  Route::get('/events/status/{id}', [EventController::class, 'toggleStatus'])->name('events.status');
 
-        Route::get('events/{id}/details/create', [EventDetailController::class, 'create'])->name('events.details.create');
+  Route::post('events/sort', [EventController::class, 'sort'])->name('events.sort');
 
+  Route::get('events/{id}/details/index', [EventDetailController::class, 'index'])->name('events.details.index');
+  Route::get('events/{id}/details/create/section', [EventDetailController::class, 'create'])->name('events.details.create.section');
+  Route::post('events/{id}/details/store', [EventDetailController::class, 'storeDetail'])
+    ->name('events.details.store');
+
+  Route::delete('events/details/{detailId}/delete', [EventDetailController::class, 'destroy'])->name('events.details.delete');
+  Route::post('events/details/sort', [EventDetailController::class, 'sort'])->name('events.details.sort');
+  Route::get('events/details/{id}/edit', [EventDetailController::class, 'edit'])->name('events.details.edit');
+  Route::put('events/details/{id}/update', [EventDetailController::class, 'update'])->name('events.details.update');
 });
+
 //search
 Route::get('/search', [SearchController::class, 'search'])->name('search');
-
-
-

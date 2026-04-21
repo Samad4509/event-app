@@ -74,7 +74,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth','role:admin'])->group
 
 });
 //search
-Route::get('/search', [SearchController::class, 'search'])->name('search');
+// Route::get('/search', [SearchController::class, 'search'])->name('search');
 
 
 

@@ -1206,6 +1206,35 @@
                                             </div>
                                         </div>
                                     </li>
+                                      <li class="single-comment d-flex mb-5 pb-4 border-bottom">
+                                        <div class="commentor-img flex-shrink-0 me-4">
+                                            <div class="rounded-circle border border-2 p-1"
+                                                style="border-color: #e8192c !important; width: 80px; height: 80px;">
+                                                <img src="{{ asset('assets') }}/images/speaker/commentor-3.png"
+                                                    alt="Asher Carter"
+                                                    class="rounded-circle w-100 h-100 object-fit-cover">
+                                            </div>
+                                        </div>
+                                        <div class="comment-info flex-grow-1">
+                                            <p class="text-muted mb-3" style="line-height: 1.7;">Cras semper, massa vel
+                                                aliquam luctus, eros odio tempor turpis, ac bibend placerat metus tortor
+                                                eget magna. Donec mattis posuere pharetra. Donec an vestibulum ornare velit
+                                                ut sollicitudin. Pellentesque in faucibus purus.</p>
+                                            <div class="commentor-info d-flex justify-content-between align-items-center">
+                                                <div class="commentor-bio">
+                                                    <h6 class="commentor-name fw-bold mb-0">Asher Carter</h6>
+                                                    <small class="text-muted">December 10, 2021 • 12.34 PM</small>
+                                                </div>
+                                                <div class="reply-btn">
+                                                    <a href="#" class="text-decoration-none fw-bold"
+                                                        style="color: #e8192c;">
+                                                        <img src="{{ asset('assets') }}/images/icons/reply-icon.png"
+                                                            alt="" class="me-1" style="width: 14px;"> Reply
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
 
                                 </ul>
                             </div>

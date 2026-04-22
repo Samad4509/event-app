@@ -55,14 +55,14 @@
                         {{-- Image --}}
                         <td class="text-center">
                             @if($detail->image)
-                                <img src="{{ asset($detail->image) }}"
+                                <img src="{{ url($detail->image) }}"
                                      alt="img"
                                      class="rounded"
                                      width="55" height="45"
                                      style="object-fit:cover; cursor:pointer;"
                                      data-bs-toggle="modal"
                                      data-bs-target="#imageModal"
-                                    data-src="{{ asset($detail->image) }}">  
+                                    data-src="{{ url($detail->image) }}">  
                             @else
                                 <span class="text-muted small">—</span>
                             @endif
@@ -84,7 +84,7 @@
                                         data-id="{{ $detail->id }}"
                                         data-name="{{ $detail->name }}"
                                         data-description="{{ $detail->description }}"
-                                        data-image="{{ $detail->image ? asset($detail->image) : '' }}"> 
+                                        data-image="{{ $detail->image ? url($detail->image) : '' }}"> 
                                     <i class="fa fa-eye"></i>
                                 </button>
 

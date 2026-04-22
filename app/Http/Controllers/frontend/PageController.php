@@ -5,7 +5,8 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use App\Models\EventType;
 use Illuminate\Http\Request;
-use App\Models\Event; 
+use App\Models\Event;
+use App\Models\EventDetails;
 
 class PageController extends Controller
 {
@@ -27,9 +28,18 @@ class PageController extends Controller
     }
     public function eventdetail($slug)
     {
-        $event = Event::where('slug', $slug)->firstOrFail();
 
-        return view('frontend.pages.eventdetail', compact('event'));
+   
+        $event = Event::with('eventType')->where('slug', $slug)->firstOrFail();
+        // $eventsdetails = EventDetails::where('slug', $slug)
+        //                 ->orderBy('sort_order', 'asc')
+        //                 ->get();
+       
+         $eventsdetails = EventDetails::where('event_id', $event->id)
+                    ->orderBy('sort_order', 'asc')
+                    ->get();
+
+        return view('frontend.pages.eventdetail', compact('event','eventsdetails'));
     }
     public function contact()
     {

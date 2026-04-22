@@ -36,6 +36,7 @@ Route::get('/news', [PageController::class, 'news'])->name('news');
 
 
 
+
 Auth::routes();
 
 
@@ -79,6 +80,9 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
   Route::post('events/details/sort', [EventDetailController::class, 'sort'])->name('events.details.sort');
   Route::get('events/details/{id}/edit', [EventDetailController::class, 'edit'])->name('events.details.edit');
   Route::put('events/details/{id}/update', [EventDetailController::class, 'update'])->name('events.details.update');
+
+  
+
 });
 
 //search

@@ -76,7 +76,7 @@ Events Page
                                         <div class="event-date"><a href="#"> <i class="bi bi-calendar2-week"></i> January 21, 2021</a></div>
                                         <div class="event-location"><a href="#"> <i class="bi bi-geo-alt"></i> Broadw, New York</a></div>
                                     </div>
-                                    <h5 class="event-title"><a href="{{route('event.detail')}}">Media companies need to better one then educate advertisers.</a></h5>
+                                    <h5 class="event-title"><a href="">Media companies need to better one then educate advertisers.</a></h5>
 
                                     <div class="event-bottom">
                                         <div class="event-readme">

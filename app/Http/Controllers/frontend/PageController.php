@@ -10,19 +10,20 @@ use App\Models\Event;
 class PageController extends Controller
 {
     public function home()
-{
-    $eventTypes = EventType::orderBy('position', 'asc')->get();
+    {
+        $eventTypes = EventType::orderBy('position', 'asc')->get();
 
-    $events = Event::with('eventType')->where('status', 'active')->orderBy('position', 'asc') ->get()->groupBy('event_type_id');
+        $events = Event::with('eventType')->where('status', 'active')->orderBy('position', 'asc') ->get()->groupBy('event_type_id');
 
-    return view('frontend.pages.home', compact('eventTypes', 'events'));
-}
-    public function about()
+        return view('frontend.pages.home', compact('eventTypes', 'events'));
+    }
+        public function about()
     {
         return view('frontend.pages.about');
     }
     public function event()
     {
+        // return $event = Event::all();
         return view('frontend.pages.event');
     }
     public function eventdetail($slug)

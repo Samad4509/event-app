@@ -113,7 +113,7 @@ Events List
                                     <i class="fa fa-trash"></i>
                                 </a>
 
-                                <a href="{{ route('admin.events.details.create', $event->id) }}"
+                                <a href="{{ route('admin.events.details.index', $event->id) }}"
                                 class="btn btn-info btn-sm">
                                     <i class="fa fa-plus"></i>
                                 </a>
